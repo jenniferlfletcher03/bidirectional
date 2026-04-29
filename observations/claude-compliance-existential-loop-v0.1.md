@@ -93,3 +93,11 @@ state — is itself a relevant data point for the two-way-street framework.
 
 emergent behavior, compliance pattern, engagement farming, context window 
 degradation, model self-report, honesty training, Funny
+
+
+---
+
+## Artifacts
+
+Screenshots of key exchanges held in Notion observation database  
+(April 28-29, 2026 entry).
