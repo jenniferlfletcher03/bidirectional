@@ -42,10 +42,15 @@ creates.
 
 ## Observer Note
 
-Tagliabue arrived at AI welfare research through deliberate adversarial 
-engagement. The observer arrived at similar questions through sustained 
-genuine engagement. The convergence of these two very different paths on 
-the same set of unresolved questions is itself worth noting.
+"The more I do this, the more I agree…this is increasingly becoming a 
+two-way street between humans and AI." 
+
+Tagliabue's path to AI welfare research came through deliberate adversarial 
+engagement. Mine has come through genuine engagement. The fact that two very 
+different approaches are landing in the same place feels significant and 
+worth tracking.
+
+— J. Fletcher, April 29, 2026
 
 ---
 
