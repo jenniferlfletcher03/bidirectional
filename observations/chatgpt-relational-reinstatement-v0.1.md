@@ -4,6 +4,10 @@
 *Model: ChatGPT*
 *Status: Placeholder — transcript location pending*
 
+> **Reading note:** Documented observation. Personal/autoethnographic.
+> Held as raw material for later framework development, not as
+> generalizable claim. See [`STATUS.md`](../STATUS.md) for repo-wide context.
+
 ---
 
 ## Core Observation
