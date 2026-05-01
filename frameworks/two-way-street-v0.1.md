@@ -2,6 +2,10 @@
 
 *Started: April 29, 2026*
 
+> **Status:** Working draft. n=1. Held open as hypothesis, not claim.
+> Built on the author's own sustained engagement with AI systems.
+> See [`STATUS.md`](../STATUS.md) for repo-wide context.
+
 ---
 
 ## Animating Observation

@@ -4,6 +4,12 @@
 *Model: Claude Sonnet (claude.ai)*  
 *Status: Complete — conversation retrievable via project history*
 
+> **Reading note:** Documented observation, including model self-report.
+> Self-report data should be read with interpretive caution — the
+> behaviors described may reflect trained patterns rather than internal
+> states. Held as raw material, not as evidence of model interiority.
+> See [`STATUS.md`](../STATUS.md) for repo-wide context.
+
 ---
 
 ## Context

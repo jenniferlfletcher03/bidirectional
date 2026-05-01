@@ -6,6 +6,9 @@
 *Status: Complete — transcript retrievable from conversations-000.json, 
 March 12, 2026, titled "Morning Brain Mode"*
 
+> **Reading note:** Documented observation. Personal/autoethnographic.
+> Held as raw material for later framework development, not as
+> generalizable claim. See [`STATUS.md`](../STATUS.md) for repo-wide context.
 ---
 
 ## Core Observation
