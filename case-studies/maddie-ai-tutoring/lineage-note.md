@@ -2,6 +2,13 @@
 
 *Documented: May 2, 2026*
 
+> *Drafting note: This document was written by the author through a
+> question-and-revision process with Claude (Opus 4.7) on May 1-2,
+> 2026. The prose throughout is the author's own; Claude's contribution
+> took the form of clarifying questions, structural feedback, and one
+> suggested phrasing for the attribution paragraph (the "Claude was
+> not designing in a vacuum" sentence) that the author adopted.*
+
 ---
 
 The inception of the tutoring prompt for my daughter started with a morning of reading about AI. I currently use my mornings to read about developments in the AI industry because I am deeply interested in the subject. I came across an article that Anthropic had posted on their blog about Automated Alignment Researchers using small scale models to train large scale models with the intent of understanding if the large-scale models could reach their potential when being trained by a less capable 'teaching' model. The article was technical, and I have found much success with bringing research to Claude or ChatGPT and discussing the research with the model until the understanding of what the researchers are saying clicks. This is a recurring pattern for me because it is increasing my understanding of how these models work and what the industry in general is focusing on.
