@@ -6,7 +6,7 @@ inside vary widely in maturity. Reading without this context can give a
 misleading impression of what is meant to be claim vs. hypothesis vs.
 raw observation.
 
-*Last updated: May 1, 2026*
+*Last updated: May 2, 2026*
 
 ---
 
@@ -36,8 +36,10 @@ raw observation.
 | File | Status | Notes |
 |------|--------|-------|
 | `case-studies/maddie-ai-tutoring/pre-experiment.md` | Case study | Subject profile and intervention design. |
-| `case-studies/maddie-ai-tutoring/prompt.md` | Case study | System prompt v1 (used in session 1). |
-| `case-studies/maddie-ai-tutoring/` | Case study | Session 1 debrief and observations to be added. Session 2 pending. |
+| `case-studies/maddie-ai-tutoring/prompt.md` | Case study | System prompt v1 (used in session 1). v2 and v3 to be added with prompt evolution document. |
+| `case-studies/maddie-ai-tutoring/lineage-note.md` | Case study | Origin and lineage of the case study, including honest attribution of human-AI collaboration. |
+| `case-studies/maddie-ai-tutoring/session-1-debrief.md` | Case study | AI tutor's structured end-of-session report (Coach / Sonnet 4.6). |
+| `case-studies/maddie-ai-tutoring/session-1-observation.md` | Case study | In-room observer notes documenting findings the AI tutor could not see. Directly informed Rule 9 and Rule 11 prompt refinements. |
 
 ## Observations
 
@@ -58,6 +60,7 @@ raw observation.
 | File | Status |
 |------|--------|
 | `README.md` | Scaffolding |
+| `STATUS.md` | Scaffolding |
 | `frameworks/README.md` | Scaffolding |
 | `observations/README.md` | Scaffolding |
 | `questions/README.md` | Scaffolding |
@@ -67,7 +70,8 @@ raw observation.
 
 ## What's Coming
 
-- Session 1 debrief and observation files added to `case-studies/maddie-ai-tutoring/`
+- Prompt evolution structure: prompts v1, v2, v3 organized in a `prompts/` subfolder with a `PROMPT-EVOLUTION.md` document explaining what changed between versions and why
+- Observation file documenting the misattribution pattern caught in conversation with Claude (Opus 4.7) on May 1-2, 2026
 - Session 2 with Maddie + post-experiment write-up
 - At least one additional case study (different student profile)
 - Vulnerability-responsiveness paradox framework developed to v0.3
