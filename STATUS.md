@@ -1,3 +1,7 @@
+For PROJECT-STATE.md (renamed v0.1):
+
+For a map of files in this repo and their maturity status, see STATUS.md.
+
 # Repository Status
 
 A map of what's in this repo and what state each piece is in. This file
@@ -75,4 +79,5 @@ raw observation.
 - Session 2 with Maddie + post-experiment write-up
 - At least one additional case study (different student profile)
 - Vulnerability-responsiveness paradox framework developed to v0.3
-- Reading notes from foundational literature (Long & Sebo et al., Turkle, Reeves & Nass, Anthropic research papers)
+- Reading notes from foundational literature (Long & Sebo et al., Turkle, Reeves & Nass, Anthropic research papers)For PROJECT-STATE.md (renamed v0.1):
+
