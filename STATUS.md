@@ -81,4 +81,3 @@ raw observation.
 - Vulnerability-responsiveness paradox framework developed to v0.3
 - Reading notes from foundational literature (Long & Sebo et al., Turkle, Reeves & Nass, Anthropic research papers)For PROJECT-STATE.md (renamed v0.1):
 
-For a map of files in this repo and their maturity status, see STATUS.md.
