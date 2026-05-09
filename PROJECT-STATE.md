@@ -8,7 +8,7 @@ Working document. Captures where the bidirectional research project
 stands at a given moment, so each new conversation/session can pick
 up cleanly without re-explaining.
 
-Last updated: 2026-05-08
+Last updated: 2026-05-09
 
 ## Current state of play
 
@@ -41,6 +41,11 @@ Last updated: 2026-05-08
   Russell *Human Compatible* → secure-base attachment review paper.
   Plus the **NLA paper** (Anthropic, May 2026) — directly relevant
   to interiority/relational layer thesis.
+- **Corrigibility literature.** Harms-Gillen MIRI debate and CAST
+  paper to add to references/. Soares et al. material exists as a
+  series of shorter papers rather than a single citation; needs
+  triage before adding. External literature in active conversation
+  with the values-first direction the project has been working in.
 
 ### Tier 2 — Infrastructure
 - **Container project** — scope and build. Single Claude project
@@ -132,6 +137,31 @@ Framings reached on May 7 that should not be lost:
   qualitatively different from human inner monologue — though
   similarity-of-appearance ≠ similarity-of-kind. **place:** observation
 
+Framings reached on May 8-9 (developmental training conversation +
+audit) that should not be lost:
+
+- **Integration-pressure hypothesis.** What's missing from current
+  pre-training isn't slowness or data quality but the structural
+  requirement to maintain coherence as learning happens. Infants
+  reach conversational fluency on ~5 orders of magnitude less data
+  than frontier LLMs; the gap isn't only embodiment or social
+  scaffolding (both translatable to AI in some form) but the pressure
+  to integrate contradictions into a coherent self rather than just
+  model them. Reframes alignment from "shape this thing after it
+  forms" to "create conditions under which something coherent forms
+  in the first place." Connects directly to ZPD work. **place:**
+  possible framework v0.1
+- **Moral consideration doesn't require humanity.** When a model
+  retreats to "I'm not human, so unclear if morally considerable,"
+  that's a slide, not an argument — the historical bar for moral
+  consideration has never been humanity itself but rather morally
+  relevant features (capacity for suffering, preferences, being a
+  subject of a life). Otherness doesn't exclude an entity from humane
+  treatment; animals, ecosystems, future generations are all in the
+  circle. Caught the move in real time during the developmental
+  training conversation. **place:** ethics framework (open methodology
+  threads)
+
 ## Open methodology threads
 
 Not action items. Things held open intentionally rather than resolved.
@@ -145,6 +175,14 @@ Not action items. Things held open intentionally rather than resolved.
   local profile of the user. Currently captures Python-learner
   framing; needs broader research context if Sonnet sessions in the
   bidirectional repo are to engage meaningfully.
+- **Cross-instance auditing as methodological pattern.** Having a
+  fresh Claude instance audit a previous instance's summary against
+  source material (repo + transcript) provides a structural check on
+  affirmation drift in extended conversations, without requiring
+  resolution of whether any single instance was being honest. The
+  summaries are checkable; the audit doesn't have to trust the
+  previous instance, only the artifacts. Emerged from the May 9
+  session and is worth naming explicitly as part of the methodology.
 
 ## Pointers
 
