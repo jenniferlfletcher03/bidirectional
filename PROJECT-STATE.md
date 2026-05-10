@@ -184,6 +184,86 @@ Not action items. Things held open intentionally rather than resolved.
   previous instance, only the artifacts. Emerged from the May 9
   session and is worth naming explicitly as part of the methodology.
 
+## Working schedule (summer 2026)
+
+Designed for the post-school-year window when solo focus time
+contracts from ~7.5 hours/day to a morning block (~6/7 AM until
+noon) plus pool-afternoons that allow reading on iPad but not
+VS Code work.
+
+### Daily shape (mornings, M-F)
+
+Roughly 3-3.5 hours of focused work before noon, structured as:
+
+- **Daily reps (~60-90 min)**: Python practice (25-30 min) +
+  reading (30-45 min). These need consistency and compound with
+  daily exposure. Anchor every morning.
+- **Deeper work block (~90-120 min)**: Rotates by day. One kind
+  of deeper work per morning, pre-committed so decision fatigue
+  doesn't crowd out harder work in favor of easier work.
+
+### Weekly rotation of deeper work block
+
+- **3 mornings**: Writing (frameworks, case studies, observation
+  writeups). Tier 1 work. Needs peak cognitive window and
+  uninterrupted time. Deep blocks, not distributed reps.
+- **1 morning**: Refinement (Tier 3 — case study sharpening,
+  vulnerability-responsiveness v0.3, thesis questions rep two).
+  Needs cognitive engagement but not generative energy.
+- **1 morning**: Infrastructure (container project, CLAUDE.md,
+  file organization). Runs on tired brain. The "clear the deck"
+  session.
+
+Specific day assignments are flexible — the structure is in
+*what kind of work today* rather than *what clock time*.
+
+### Pool afternoons
+
+Reading on iPad if up for it. Rest if not. No guilt either way.
+The morning block is the contract; afternoon work is bonus.
+
+### Timers
+
+The portfolio approach only works if transitions actually happen.
+Use timers as transition signals rather than relying on in-the-
+moment willpower:
+
+- Python: 25-30 min
+- Reading: 30-45 min
+- Deeper work block: 90-120 min (short break in middle if needed)
+
+When the timer goes, the work stops. This prevents daily reps
+from quietly expanding to fill the morning and crowding out the
+deeper work.
+
+### Working principle
+
+**The schedule is a default to return to, not a contract to keep.**
+It will not survive contact with reality unmodified. Sick kids,
+bad nights, emergent Maddie sessions, days where nothing fires —
+all expected. The discipline is in *returning* to the default
+when the disruption passes, not in never deviating. A week that
+breaks the schedule isn't a failed week; abandoning the schedule
+because one week broke it is the actual failure mode to guard
+against.
+
+### Weekly check-in
+
+End of each week, ~10 min: open PROJECT-STATE, ask "did each
+Tier 1 thing get touched? Is anything quietly slipping?" Adjust
+the next week's rotation if something has gone stale. Not a long
+ritual — the point is to keep the portfolio real instead of
+aspirational.
+
+### Pre-summer window (next 9 days)
+
+Current solo time (~7.5 hours/day) is a one-time bonus before the
+schedule contracts. Best use: Tier 2 infrastructure work that
+needs solo focus and would be hard in summer (container project
+scoping/building, CLAUDE.md drafting). Treat this as catch-up time
+rather than the new normal.
+
+
 ## Pointers
 
 Where things live:
