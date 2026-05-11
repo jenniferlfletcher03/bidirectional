@@ -8,7 +8,7 @@ Working document. Captures where the bidirectional research project
 stands at a given moment, so each new conversation/session can pick
 up cleanly without re-explaining.
 
-Last updated: 2026-05-09
+Last updated: 2026-05-11
 
 ## Current state of play
 
@@ -25,6 +25,13 @@ Last updated: 2026-05-09
   module 1 lessons 1-3 captured
 - Project instructions updated to leaner version
 - Conversation corpus available via Anthropic data export when needed
+- **Container project (resolved 2026-05-11).** Originally scoped as
+  a single Claude project consolidating conversations across three
+  projects. Resolved instead by settling into a two-project structure
+  (work / thinking-out-loud) with easy migration between them when
+  needed. Project C (ChatGPT memory work) remains dormant as an
+  archive of completed work; nothing to consolidate. Not sprawl —
+  triaged sprawl.
 
 ### Open / in motion
 - (Update as work begins/finishes)
@@ -32,9 +39,7 @@ Last updated: 2026-05-09
 ## Active priorities
 
 ### Tier 1 — Active research with momentum (fresh-head sessions)
-- **Thread 4: Misattribution writeup.** Document the conversation
-  where Opus attributed both its own words and Sonnet's words to me.
-  Real research data on a specific failure mode.
+- **Thread 4: Misattribution writeup.** "Misattribution writeup → reframed to attribution episode + conversational accommodation; skeleton in local drafts, ready to write when next on rotation."
 - **Maddie Session 2 writeup.** Session 2 happened; n=2 case study
   work is high-value.
 - **Phase 1 reading.** Long & Sebo *Taking AI Welfare Seriously* →
@@ -48,9 +53,6 @@ Last updated: 2026-05-09
   with the values-first direction the project has been working in.
 
 ### Tier 2 — Infrastructure
-- **Container project** — scope and build. Single Claude project
-  that consolidates conversations currently scattered across three
-  different projects.
 - **CLAUDE.md for bidirectional repo** — curated framing for Claude
   Code/Sonnet sessions launched here. Author intentionally rather
   than letting Sonnet infer.
@@ -183,6 +185,17 @@ Not action items. Things held open intentionally rather than resolved.
   summaries are checkable; the audit doesn't have to trust the
   previous instance, only the artifacts. Emerged from the May 9
   session and is worth naming explicitly as part of the methodology.
+- **ChatGPT case study repo decision.** Currently lives in private
+  repo (separate from bidirectional). Decision pending: whether to
+  promote synthesized findings (as a public case study in the same
+  shape as Maddie) while keeping raw .json materials and processing
+  notes private. Two decisions tangled together: (a) make the case
+  study findings part of the public bidirectional project, (b) make
+  the raw source material public — these don't have to happen
+  together. Not urgent. Revisit when ready for editorial work,
+  likely after misattribution writeup and Maddie Session 2.
+
+
 
 ## Working schedule (summer 2026)
 
@@ -282,10 +295,7 @@ Where things live:
 
 ## How to update this file
 
-End of substantial work session: open this file, move done items to
-"Substantively done," add new items where they fit, update working
-observations if anything new emerged. Commit with descriptive
-message. Push.
+End of substantial work session: open this file, move done items to 'Substantively done' (existing section near the top), add new items where they fit, update working observations if anything new emerged. Commit with descriptive message. Push.
 
 The point of this file: prevent scatter across sessions and
 conversations. Anything in here is something future-you or
