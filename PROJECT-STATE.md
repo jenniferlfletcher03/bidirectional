@@ -31,7 +31,18 @@ Last updated: 2026-05-11
   (work / thinking-out-loud) with easy migration between them when
   needed. Project C (ChatGPT memory work) remains dormant as an
   archive of completed work; nothing to consolidate. Not sprawl —
-  triaged sprawl.
+  triaged sprawl. 
+- **CLAUDE.md for bidirectional repo (resolved 2026-05-11).**
+  Originally scoped as preemptive orientation for Sonnet sessions in
+  Claude Code, motivated by claude.ai project source capacity limits
+  and GitHub connector issues at current repo size. Resolved by
+  reframing: the context-limitation isn't solvable by switching
+  tools (it's a property of working with large research corpora and
+  current AI tooling), and offloading technical work to Sonnet would
+  undercut the project goal of building coding capacity. Substantive
+  work stays in claude.ai (with Opus when available); technical work
+  stays with the user. CLAUDE.md may be written later for specific
+  bounded tasks if a need arises.
 
 ### Open / in motion
 - (Update as work begins/finishes)
@@ -53,9 +64,7 @@ Last updated: 2026-05-11
   with the values-first direction the project has been working in.
 
 ### Tier 2 — Infrastructure
-- **CLAUDE.md for bidirectional repo** — curated framing for Claude
-  Code/Sonnet sessions launched here. Author intentionally rather
-  than letting Sonnet infer.
+- (Update as infrastructure needs arise)
 
 ### Tier 3 — Refinement of existing work
 - **ChatGPT case study sharpening:**
@@ -271,10 +280,7 @@ aspirational.
 ### Pre-summer window (next 9 days)
 
 Current solo time (~7.5 hours/day) is a one-time bonus before the
-schedule contracts. Best use: Tier 2 infrastructure work that
-needs solo focus and would be hard in summer (container project
-scoping/building, CLAUDE.md drafting). Treat this as catch-up time
-rather than the new normal.
+schedule contracts. Best use: Tier 1 writing and Phase 1 reading. Treat this as catch-up time rather than the new normal.
 
 
 ## Pointers
