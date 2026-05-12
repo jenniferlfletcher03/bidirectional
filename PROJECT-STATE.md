@@ -8,11 +8,29 @@ Working document. Captures where the bidirectional research project
 stands at a given moment, so each new conversation/session can pick
 up cleanly without re-explaining.
 
-Last updated: 2026-05-11
+Last updated: 2026-05-12
 
 ## Current state of play
 
 ### Substantively done (or close)
+- **Thesis re-centering (May 8-12, 2026).** Project's center of 
+  gravity shifted from "documenting relational dynamics in human-AI 
+  interaction" to "developing a hypothesis about whether human 
+  developmental science offers a model for AI training that might 
+  produce genuine alignment rather than performed alignment." 
+  Existing observational and framework work re-positions as 
+  evidence bearing on the hypothesis rather than as the central 
+  artifact. Hypothesis articulated initially May 8-9, articulated 
+  more clearly May 11, stable on May 12. Rhetorical posture: 
+  exploratory, not authoritative — both because the evidence isn't 
+  yet in (developmental science literature review and alignment 
+  literature engagement are load-bearing prerequisites) and because 
+  exploratory framing is the accurate posture for a hypothesis 
+  three days into clear articulation. New top-level framework 
+  document (`developmental-training-hypothesis-v0.1.md`) to be 
+  created as a stub today and developed in upcoming writing blocks. 
+  README and STATUS.md revisions will follow the framework 
+  document, not precede it.
 - Thesis core articulated — 4-point argument with 3b ("emergent
   relational behavior may stabilize AI behavior") as load-bearing
 - ZPD Learning System + Shared Interaction System docs (theoretical leg)
@@ -50,18 +68,26 @@ Last updated: 2026-05-11
 ## Active priorities
 
 ### Tier 1 — Active research with momentum (fresh-head sessions)
+- **Developmental-training hypothesis framework (v0.1).** New 
+  central framework document articulating the hypothesis arrived 
+  at May 8-12. Stub created May 12; full v0.1 to be developed in 
+  upcoming writing blocks. Exploratory framing. Document the 
+  hypothesis, what would support it, what would weaken or falsify 
+  it, the required reading to develop it further, and its 
+  relationship to existing repo work (vulnerability-responsiveness, 
+  two-way-street, ChatGPT case study, Maddie sessions, 
+  integration-pressure observation all bear on it).
 - **Thread 4: Misattribution writeup.** "Misattribution writeup → reframed to attribution episode + conversational accommodation; skeleton in local drafts, ready to write when next on rotation."
 - **Maddie Session 2 writeup.** Session 2 happened; n=2 case study
   work is high-value.
 - **Phase 1 reading.** Long & Sebo *Taking AI Welfare Seriously* →
   Russell *Human Compatible* → secure-base attachment review paper.
   Plus the **NLA paper** (Anthropic, May 2026) — directly relevant
-  to interiority/relational layer thesis.
+  to interiority/relational layer thesis. (Now load-bearing for the developmental-training hypothesis, not supplementary.)
 - **Corrigibility literature.** Harms-Gillen MIRI debate and CAST
   paper to add to references/. Soares et al. material exists as a
   series of shorter papers rather than a single citation; needs
-  triage before adding. External literature in active conversation
-  with the values-first direction the project has been working in.
+  triage before adding. Now load-bearing — the developmental-training hypothesis is in direct conversation with corrigibility debates and needs to engage them rigorously.
 
 ### Tier 2 — Infrastructure
 - (Update as infrastructure needs arise)
@@ -160,8 +186,8 @@ audit) that should not be lost:
   to integrate contradictions into a coherent self rather than just
   model them. Reframes alignment from "shape this thing after it
   forms" to "create conditions under which something coherent forms
-  in the first place." Connects directly to ZPD work. **place:**
-  possible framework v0.1
+  in the first place." Connects directly to ZPD work.
+  **place:** incorporated into developmental-training-hypothesis-v0.1.md (May 12, 2026) — was the seed of the mechanism the central hypothesis proposes
 - **Moral consideration doesn't require humanity.** When a model
   retreats to "I'm not human, so unclear if morally considerable,"
   that's a slide, not an argument — the historical bar for moral
@@ -172,6 +198,32 @@ audit) that should not be lost:
   circle. Caught the move in real time during the developmental
   training conversation. **place:** ethics framework (open methodology
   threads)
+
+  Framings reached on May 12 (thesis re-centering conversation) that 
+should not be lost:
+
+- **Exploratory vs. authoritative rhetorical posture.** The 
+  hypothesis is offered as exploration, not as a correction to 
+  current alignment approaches. Two reasons, weighted differently: 
+  (1) load-bearing — the evidence isn't yet in and the posture 
+  should match the epistemic state; (2) pragmatic — rigorous 
+  outsiders with a sharp question get read; bombastic outsiders 
+  get dismissed. Worth distinguishing the two reasons in own head 
+  even though they point the same direction here. Also worth 
+  noticing when "exploratory framing because evidence isn't in" 
+  shades into "exploratory framing because I've internalized that 
+  someone with my background isn't allowed to claim things" — same 
+  posture from outside, different cost from inside. **place:** 
+  methodology/README
+- **Re-centering does not invalidate existing work.** Frameworks, 
+  observations, case studies all retain their value; they shift 
+  from being "the work itself" to being "evidence bearing on the 
+  central hypothesis." Maddie work in particular gets re-described: 
+  not just an AI tutoring case study, but an applied test of 
+  whether developmental scaffolding (ZPD) translates meaningfully 
+  to AI-mediated learning. Same data, different argument, higher 
+  evidentiary bar. **place:** to be reflected in next pass through 
+  case-studies/maddie-ai-tutoring/ and frameworks/
 
 ## Open methodology threads
 
