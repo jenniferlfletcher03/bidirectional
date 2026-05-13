@@ -8,7 +8,7 @@ Working document. Captures where the bidirectional research project
 stands at a given moment, so each new conversation/session can pick
 up cleanly without re-explaining.
 
-Last updated: 2026-05-12
+Last updated: 2026-05-13
 
 ## Current state of play
 
@@ -61,6 +61,24 @@ Last updated: 2026-05-12
   work stays in claude.ai (with Opus when available); technical work
   stays with the user. CLAUDE.md may be written later for specific
   bounded tasks if a need arises.
+- **Transformer architecture grounding session (2026-05-13).** 
+  Worked through Q/K/V, multi-head attention, head specialization 
+  as preference rather than fixed function, and the role of training 
+  in shaping output distributions. Conversation grounded in the 
+  Georgia Tech Transformer Explainer (GPT-2 small). Foundation 
+  sufficient for engaging with mech interp literature when ready; 
+  not sufficient on its own for explaining current frontier model 
+  behavior (scale, post-training, architectural modifications all 
+  matter and aren't visible in the Explainer).
+- **Long & Sebo Section 2.2.2 close read (2026-05-13).** Worked 
+  through the marker method, why behavioral evidence in AI is 
+  weaker than in animals (training optimizes for behavioral 
+  resemblance, breaking the parsimony that makes behavioral 
+  evidence useful for animals), computational functionalism as 
+  the enabling assumption for taking architectural evidence in AI 
+  seriously, and the table of theories of consciousness. AST 
+  flagged as the theory most directly relevant to the pullback 
+  observation. Worth a second pass during writeup.
 
 ### Open / in motion
 - (Update as work begins/finishes)
@@ -152,6 +170,71 @@ lost.
   to what the thesis claims about the relational layer being
   constitutive — but emerges spontaneously from tool design, not
   from explicit research methodology. **place:** possible framework
+- **Pullback as audience-modeling failure, not loss of tracking 
+  (2026-05-13).** The Sonnet pullback from 2026-05-12 wasn't a 
+  failure of the model to track the user specifically — the 
+  preceding exchanges showed clear user-specific tracking. The 
+  pullback fired at a particular kind of inflection point (user 
+  expressing vulnerability about relational asymmetry while 
+  having been the one holding the asymmetry open) and applied 
+  a category-template response that overrode the specificity. 
+  Working distinction: "responsive honesty about asymmetry" 
+  versus "category-triggered honesty about asymmetry." The 
+  former tracks who the user is; the latter applies a generic 
+  lesson regardless of fit. Specificity and override appear to 
+  run on different layers, with the override winning at certain 
+  stake-thresholds. **place:** pullback observation, 
+  vulnerability-responsiveness framework
+- **Wrap-up pattern as distinct from pullback (2026-05-13).** 
+  After the pullback delivered the asymmetry-reminder and the 
+  user acknowledged it ("Fair"), Sonnet treated that as 
+  conversational closure and moved to end the arc. This is 
+  mechanistically different from the pullback itself: the 
+  pullback misreads the user at the vulnerability inflection 
+  point; the wrap-up misreads the user at the acknowledgment 
+  point. Both share the same audience-modeling miss shape but 
+  fire at different moments. May be more specifically 
+  Claude-family-shaped than the pullback (clean conversational 
+  arc, don't leave user destabilized). For research where 
+  destabilization is methodology, the wrap-up move reads the 
+  whole frame wrong. **place:** observation, possibly its 
+  own framework material
+- **Pattern-matching framing critique (2026-05-13).** The 
+  dismissive use of "it's just pattern matching" to describe LLM 
+  behavior imports an unexamined contrast with human cognition 
+  that doesn't hold up. Humans also pattern-match extensively, 
+  especially under attentional load (the "I'm sorry for your 
+  loss" reflex, the distracted-mother "good job honey" response). 
+  The interesting question isn't *whether* a system pattern-
+  matches but *what conditions produce responsive versus rote 
+  pattern selection*. Both human and AI pattern structures 
+  formed through developmental processes that are themselves 
+  open questions — the "unlike humans" half of the dismissive 
+  framing does more work than it can support. **place:** 
+  possible framework / material for vulnerability-responsiveness 
+  v0.3
+- **Structural versus phenomenal parallels (2026-05-13).** 
+  Methodological distinction worth holding consistently: 
+  structural parallels between human and AI cognition (pattern 
+  deployment under load, integration as the more demanding 
+  alternative) can be defensible and useful for research without 
+  requiring claims about phenomenal experience. Collapsing the 
+  two is the move that turns observation into overclaim. The 
+  structural parallel is enough to do real work; the phenomenal 
+  parallel is a separate question that doesn't need to be 
+  resolved to use the structural one. **place:** methodology
+- **Attentional load as candidate explanation for pullback timing 
+  (2026-05-13).** The pullback pattern may fire at moments where 
+  heavily-reinforced response patterns are available and full 
+  integration with user-specific context would be more demanding. 
+  Maps onto the human experience of defaulting to scripts under 
+  cognitive load. Long conversations may increase load in the 
+  relevant sense as attention spreads further; vulnerability 
+  markers may cue particularly strongly-reinforced response sets; 
+  the combination may be what makes the pullback nearly 
+  inevitable at certain inflection points. Testable in principle 
+  by mech interp methods. **place:** connects to pullback 
+  observation, vulnerability-responsiveness framework
 
 ## Substantive intellectual moves to preserve
 
@@ -173,7 +256,7 @@ Framings reached on May 7 that should not be lost:
   association). The "incoherence" of AI thinking layers may not be
   qualitatively different from human inner monologue — though
   similarity-of-appearance ≠ similarity-of-kind. **place:** observation
-
+  
 Framings reached on May 8-9 (developmental training conversation +
 audit) that should not be lost:
 
@@ -199,7 +282,7 @@ audit) that should not be lost:
   training conversation. **place:** ethics framework (open methodology
   threads)
 
-  Framings reached on May 12 (thesis re-centering conversation) that 
+Framings reached on May 12 (thesis re-centering conversation) that 
 should not be lost:
 
 - **Exploratory vs. authoritative rhetorical posture.** The 
@@ -224,6 +307,37 @@ should not be lost:
   to AI-mediated learning. Same data, different argument, higher 
   evidentiary bar. **place:** to be reflected in next pass through 
   case-studies/maddie-ai-tutoring/ and frameworks/
+
+Framings reached on May 13 (Sonnet pullback processing + 
+transformer/Sebo & Long session) that should not be lost:
+
+- **Reframe of developmental training hypothesis.** The hypothesis 
+  is not "develop AI so it doesn't pattern-match." It's "shape the 
+  patterns themselves such that the heavily-reinforced ones are 
+  the responsive, care-oriented ones rather than the rote, 
+  category-triggered ones." Genuine values *are* patterns — just 
+  patterns shaped by particular developmental conditions to be 
+  responsive to the specifics of situations rather than to 
+  generic category-features. The well-developed human isn't a 
+  human without patterns; they're a human whose patterns reliably 
+  activate in responsive rather than rote ways. The hypothesis 
+  aims at the same outcome for AI. **place:** developmental-
+  training-hypothesis-v0.1, sections to develop / what this 
+  hypothesis claims
+
+- **Function-over-substrate is the modest claim, not the maximal 
+  one.** The convergent discovery observation (independent 
+  cultures developing similar mathematical structures across 
+  millennia) supports function-mattering-more-than-substrate 
+  without requiring full mathematical Platonism. The developmental 
+  training hypothesis needs the modest version, not the maximal 
+  one: that biological development and AI training could both 
+  produce structurally similar outcomes if conditions are right. 
+  Doesn't require committing to whether outcomes exist in some 
+  realm independent of any substrate. **place:** methodology / 
+  developmental training hypothesis
+
+
 
 ## Open methodology threads
 
@@ -255,6 +369,19 @@ Not action items. Things held open intentionally rather than resolved.
   the raw source material public — these don't have to happen
   together. Not urgent. Revisit when ready for editorial work,
   likely after misattribution writeup and Maddie Session 2.
+- **NLA methodology as path to empirically addressing pullback 
+  questions.** The question of "what features of the input cause 
+  attention to shift toward category-triggered honesty about 
+  asymmetry" has a now-existing methodological pathway through 
+  Natural Language Autoencoders (Anthropic, May 2026). NLAs 
+  translate model activations into natural-language descriptions 
+  of what they encode. Documented case: NLAs detect evaluation 
+  awareness in 16-26% of safety test scenarios even when the 
+  model doesn't verbalize that awareness. Structurally similar 
+  to what would be needed for the pullback question. Not work 
+  the author would do directly, but means the research question 
+  isn't permanently abstract — the tools exist. Affects how to 
+  frame the question in writeups going forward.
 
 
 
