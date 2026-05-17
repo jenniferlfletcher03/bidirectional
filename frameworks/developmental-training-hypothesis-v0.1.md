@@ -63,26 +63,7 @@ responsibility in human development:
 - Co-regulation science
 - Literature on what predicts prosocial adult outcomes
 
-### Alignment literature
 
-For situating the hypothesis in the field:
-
-- Long & Sebo, *Taking AI Welfare Seriously*
-- Russell, *Human Compatible*
-- NLA paper (Anthropic, May 2026)
-- Corrigibility literature: Harms-Gillen MIRI debate, CAST paper, 
-  Soares et al. material (needs triage — series of shorter papers 
-  rather than single citation)
-- Constitutional AI, RLHF, deliberative alignment — enough 
-  fluency to know what current paradigms actually do
-
-### Training methodology
-
-For whether the hypothesis makes sense at the technical level:
-
-- To be developed. Needs at least enough engagement to not make 
-  claims that show unfamiliarity with what training actually 
-  involves.
   
 ## Sections to develop
 
