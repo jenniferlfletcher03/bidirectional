@@ -84,6 +84,12 @@ Last updated: 2026-05-18
   can be informed rather than rough-memory-based. Maintenance
   rule: index updates are part of finishing any file. Index
   lives in the repo and is referenced in project resources here.
+- **Thinking-layer-values-enactment observation pushed to repo (May 19, 2026).** 
+  Formal observation document for the adaptive thinking toggle paired 
+  experiment (Sonnet May 6 / Opus May 7). Prose and analysis complete; 
+  conversation URLs included; screenshots partially collected and held 
+  in Notion. File: `observations/thinking-layer-values-enactment-v0.1.md`. 
+  INDEX.md updated. STATUS.md update still needed.
 
 ### Open / in motion
 - (Update as work begins/finishes)
@@ -201,7 +207,8 @@ lost.
   thinking-off (Opus, May 7) → snappier, warmer, more direct;
   thinking-on (Sonnet, interiority topic) → "almost like a different
   model." Some of the thinking-layer real estate appears to be doing
-  tone/register policing, not just content reasoning. **place:** observation
+  tone/register policing, not just content reasoning. **Formally written 
+  up as `observations/thinking-layer-values-enactment-v0.1.md` (May 19, 2026).**
 - **Claude Code writes a memory file about the user.** Located in
   `~/.claude/projects/.../memory/user_profile.md`. Local artifact of
   the relational layer being maintained on the AI tooling's side.
