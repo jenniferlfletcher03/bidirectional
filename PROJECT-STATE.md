@@ -4,7 +4,7 @@ Working document. Captures where the bidirectional research project
 stands at a given moment, so each new conversation/session can pick
 up cleanly without re-explaining.
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
 
 ## Current state of play
 
