@@ -5,3 +5,14 @@ __pycache__/
 .env
 .vscode/
 _drafts/
+
+# Private research workspace — local only, never goes to GitHub.
+# The repo is the public-facing subset of the research; these folders are the
+# raw materials behind it. To make any one of these public later, delete its
+# line here and `git add` the folder.
+artifacts/
+data/
+essays/
+notes/
+reading/
+training/
