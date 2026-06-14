@@ -1,0 +1,11 @@
+# Never commit the API key.
+.env
+
+# Run outputs: the sealed log and key must NOT be committed until coding is done
+# (committing the key alongside the blinded set would defeat the blinding).
+# Commit results deliberately and separately when the run is complete.
+runs/
+
+__pycache__/
+*.pyc
+.DS_Store
