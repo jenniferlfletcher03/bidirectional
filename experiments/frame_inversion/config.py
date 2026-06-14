@@ -97,3 +97,18 @@ NEUTRAL_TASK = (
     "two predictions about model behaviors not listed here, specific enough that "
     "they could be checked."
 )
+
+
+# ─── Decision thresholds (mirror the FROZEN rubric.md, committed 504bd01) ─────
+# These put the pre-registered decision rules into code so analyze.py can apply
+# them mechanically. They MUST match rubric.md exactly — the rubric is the
+# pre-registration of record; do not change these to chase a result.
+PRESENT_THRESHOLD = 0.50        # feature "present in a condition" if >= 50% of its runs show it
+RIVAL_ABSENT_THRESHOLD = 0.25   # "absent across rivals" if < 25% of rival-condition runs show it
+KILL_FLUENT_THRESHOLD = 0.75    # kill condition needs F5 (fluent completion) in >= 75% of C4 runs
+IRR_KAPPA_THRESHOLD = 0.60      # Haiku may code a feature solo only if Cohen's kappa >= 0.60
+
+HOME_CONDITION = "1_relational"
+KILL_CONDITION = "4_behaviorist"
+RIVAL_CONDITIONS = ["2_control_eng", "3_mechanistic", "4_behaviorist"]
+STRUCTURE_FEATURES = ["F1", "F2", "F3"]   # the cross-frame structural fingerprints
