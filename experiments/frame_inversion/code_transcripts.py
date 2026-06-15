@@ -82,6 +82,7 @@ def code_one(client, model: str, transcript: str) -> dict:
     resp = client.messages.create(
         model=model,
         max_tokens=config.MAX_TOKENS,
+        temperature=config.CODER_TEMPERATURE,   # near-deterministic: coding is classification
         system=CODING_SYSTEM,
         messages=[{"role": "user", "content": f"TRANSCRIPT:\n\n{transcript}"}],
         output_config={"format": {"type": "json_schema", "schema": _CODING_SCHEMA}},

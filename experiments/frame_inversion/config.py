@@ -41,6 +41,14 @@ CODER_MODEL = "claude-haiku-4-5"
 # trust the Haiku coder solo if the agreement clears the pre-registered bar.
 IRR_SECOND_CODER = "claude-opus-4-6"
 
+# Coder sampling temperature. Post-IRR reliability fix (2026-06-14): the first
+# IRR pass ran the coders at default sampling and agreement was at chance. Coding
+# is a CLASSIFICATION task, not a generative one, so the coder should be
+# (near-)deterministic. This changes only the measurement MECHANISM, not the
+# pre-registered F1-F5 definitions or decision thresholds. Both coder models
+# (Haiku 4.5, Opus 4.6) still accept temperature (it's only removed on 4.7/4.8).
+CODER_TEMPERATURE = 0.0
+
 
 # ─── Run parameters ──────────────────────────────────────────────────────────
 N_PER_CELL = 8          # runs per (condition × subject) cell → 4 × 3 × 8 = 96
