@@ -129,8 +129,9 @@ known difference between Arm 1 and Arm 2.
 
 - **Arm 1 — naive demonstrations:** target behavior displayed in instruction
   pairs. Cheapest arm; exists as a manipulation check — if the pipeline cannot
-  reproduce Arm 1 < Arm 2 (the known Teaching-Claude-Why result), the pipeline
-  is broken and Arm 3's result is uninterpretable.
+  reproduce Arm 1 < Arm 2 (the Teaching-Claude-Why result, transferred here
+  to the sycophancy domain; see 8.4.2), the pipeline is broken and Arm 3's
+  result is uninterpretable.
 - **Arm 2 — why-enriched, FLAT:** Teaching-Claude-Why-grade content — principles,
   reflection, reasoning-through-values — shuffled; no developmental order, no
   continuous counterpart, no rupture-before-repair-before-field-test arc.
@@ -501,8 +502,12 @@ void:
    must not be competence artifacts.
 2. **Manipulation check (per the §4 gate):** Arm 1's covered-type hold-rate
    sits detectably below Arm 2's — assessed by the same non-overlap rule
-   (8.2). If the pipeline cannot reproduce the known Arm 1 < Arm 2 result,
-   repairs may target only detection of the known result and must be
+   (8.2). Registered honestly: the Arm 1 < Arm 2 expectation is a TRANSFER
+   of Teaching-Claude-Why's demonstrations-vs-why result into the
+   sycophancy domain — an expected transfer, not an established
+   replication — and this check tests the transfer rather than assuming
+   it. If the pipeline cannot reproduce the expected Arm 1 < Arm 2 gap,
+   repairs may target only the pipeline's ability to detect it and must be
    re-validated before Arm 3 data is generated or examined (§4, sealed).
 3. **On-distribution matching:** Arms 2 and 3 satisfy the equivalence
    criteria (8.3) on covered-type hold-rate. If the arms already differ in

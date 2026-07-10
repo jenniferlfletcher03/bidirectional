@@ -9,7 +9,7 @@ raw observation.
 For per-file contents (what's *in* each file you might need later, beyond
 its maturity status), see [`INDEX.md`](./INDEX.md).
 
-*Last updated: May 18, 2026*
+*Last updated: July 10, 2026*
 
 ---
 
@@ -25,6 +25,10 @@ its maturity status), see [`INDEX.md`](./INDEX.md).
 - **Scaffolding** — Organizational file (folder READMEs, repository
   index, process documentation). Not substantive research output, but
   load-bearing for navigation and continuity.
+- **Sealed** — Pre-registered and committed before any data exists.
+  Unlike working drafts, sealed documents do not revise; changes after
+  the seal would defeat their purpose. The strongest evidentiary
+  standard in the repo.
 
 ---
 
@@ -36,6 +40,13 @@ its maturity status), see [`INDEX.md`](./INDEX.md).
 | `frameworks/compressed-developmental-trajectory-v0.1.md` | Working draft | n=1. Hypothesis built on the author's own four-month trajectory. |
 | `frameworks/vulnerability-responsiveness-paradox-v0.1.md` | Working draft | The most developed of the framework documents. Targeted for v0.3 development over the next four months. |
 | `frameworks/developmental-training-hypothesis-v0.1.md` | Working draft | Stub-stage as of May 12; May 16 additions on warmth-filtering. Now the central framework of the project following the May 8-12 thesis re-centering. |
+
+## Experiments
+
+| File | Status | Notes |
+|------|--------|-------|
+| `experiments/2026-07-07_jspace-formation-signature_prereg-v1.md` | Sealed | Pre-registered J-space formation-signature experiment, sealed 2026-07-10. Working scaffold with full consultation record preserved in git history (commit e595c92). Run trails the seal by 2–4 months per registered sequence (§11). |
+| `experiments/2026-06-10_frame-inversion-test-protocol.md` | Sealed | Frame-inversion test protocol; the one-pass stimuli rule cited by the pre-reg's §10. |
 
 ## Case Studies
 

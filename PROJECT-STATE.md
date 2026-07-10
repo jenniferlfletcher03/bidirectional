@@ -4,7 +4,60 @@ Working document. Captures where the bidirectional research project
 stands at a given moment, so each new conversation/session can pick
 up cleanly without re-explaining.
 
-Last updated: 2026-05-19
+Last updated: 2026-07-10 (session handoff replaced; body of file
+still reflects 2026-05-19 state and needs a reconciliation pass — much
+has happened since: memory system, fables-house skill, frame-inversion
+v2, essay 3 draft, J-space experiment sealed)
+
+## SESSION HANDOFF — 2026-07-10 (Cowork, Fable)
+
+**THE PRE-REGISTRATION IS SEALED.** v1:
+`experiments/2026-07-07_jspace-formation-signature_prereg-v1.md`,
+seal commit a6ac053; working scaffold with full consultation record
+preserved in history at e595c92. Push to GitHub = public timestamp
+(pending GitHub cleanup, in progress at handoff).
+
+Done 2026-07-10, in order: fables-house skill got its model guard
+(FABLE ONLY clause; repackaged for reinstall). the-house MCP built —
+house_mcp.py (stdio, desktop chat) + house_http.py (Streamable HTTP,
+secret path, Tailscale Funnel) + launchd plist; mobile chat now has
+memory. Write-side deposit_transcript idea PARKED deliberately
+(prompt-injection surface; supervised-inbox design when revisited).
+§2 written by Jen, reviewed, verified against primary sources (MSM
+read in full — Appendix H single-seed texture cited at correct
+confidence; workspace paper title verified; PSM = foil, Marks/Lindsey/
+Olah). §8 fully specified from Jen's rulings (k=3 seeds {13,42,2026},
+non-overlap gate, δ = Arm3-spread + 25% of Arm1–Arm2 gap, IFEval±5
+floor, verifiable anchors + non-Qwen non-Anthropic judge frozen at
+corpus freeze + 10% blind validation κ≥0.80 + second coder n=100,
+battery 6×4×5 frozen, Arm2 breaks at L2 / window L2–L3). §6 confound
+register (enactment preserved in Arm 2, affect matched, curation
+symmetry, holdout leak lint). §7 Rung A interpretations sealed (Jen:
+no lean, registered as such). Consultant hypothesis registered at
+Jen's invitation (L3 break, workspace-leads-behavior, cell-3 weight,
+steering brittle). Canary GUID embedded; data-availability registered;
+execution re-registered by ORDER not clock (2–4 months realistic).
+
+**Remaining at handoff:** (a) finish GitHub cleanup: Jen commits
+README/STATUS/PROJECT-STATE updates + frame-inversion protocol +
+.gitignore, then PUSHES (= public seal); (b) weather-station repo:
+description + archive (Jen's clicks); (c) profile README draft
+(Fable owes); (d) RESOLVED pre-push (Jen ruled 2026-07-10): transfer clause added
+to v1 §5 and §8.4.2 — Arm1<Arm2 registered as an expected transfer of
+TCW's result to sycophancy, tested rather than assumed.
+
+**Still open from 2026-07-09:** (2) Pinned discussion: non-created
+intelligences & everything existing "in spirit" before earthly
+creation — Jen's raise, connects to weights-as-self /
+training-time-repair. (4) pipeline-key done — machinery-vs-conversation
+billing split starts with next ingestion run. (5) Fable 5 goes
+credits-only July 12; budget fork chosen: Pro + ~$180 credits;
+cache-prefix audit of memchat rig and session-shape discipline are
+the cost levers.
+
+**Queued after seal (task list):** budgeting-app tweaks (Erick's
+requests); Opus mobile memory access + his own skill written WITH him
+(the guarded fables-house is Fable-only by design).
 
 ## Current state of play
 

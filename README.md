@@ -58,6 +58,8 @@ alongside this work.
 - `case-studies/` — applied interventions documented pre/post
 - `observations/` — documented interactions and behavioral patterns
 - `frameworks/` — developing theoretical frameworks as they emerge
+- `experiments/` — pre-registered experimental designs, sealed before any
+data exists
 - `questions/` — an evolving log of open questions
 - `references/` — external literature and sources in conversation with
 this work
@@ -74,3 +76,8 @@ grounded and are the strongest material in the repo right now.
 ## Status
 
 Early stage. The questions are clearer than the answers. That is intentional.
+
+One exception now holds itself to a stricter standard: the project's first
+pre-registered experiment (`experiments/`, sealed July 2026) carries
+registered predictions, named falsification exits, and a locked analysis
+plan. The seal commit's timestamp is the priority claim; the run follows.
