@@ -4,17 +4,27 @@ __pycache__/
 *.py[cod]
 .env
 .vscode/
-_drafts/
+*.bak
+*.bak-*
 
-# Private research workspace — local only, never goes to GitHub.
-# The repo is the public-facing subset of the research; these folders are the
-# raw materials behind it. To make any one of these public later, delete its
-# line here and `git add` the folder.
+# Private material lives in ~/Projects/bidirectional-private (its own
+# repo) as of the 2026-08-08 split. This repo is the public subset only.
+# The lines below are tripwires, not organization: if any of these paths
+# reappear here, they stay invisible to git until deliberately moved to
+# the private repo. Promotion to public is a file move + commit there,
+# never a gitignore edit.
+_drafts/
 artifacts/
 data/
 essays/
 fiction/
+funding/
 notes/
 reading/
 training/
 weekly-todo/
+experiments/CORN.md
+experiments/corn/
+experiments/six-prompts.md
+experiments/six-prompts-full-run.md
+experiments/vessel-record.md
