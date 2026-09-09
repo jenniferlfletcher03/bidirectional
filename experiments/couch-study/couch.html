@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>the couch</title>
+<style>
+  :root{--cream:#faf7f1;--ink:#33414d;--slate:#5b6b7a;--peri:#8a93d8;--rose:#c98b97;--teal:#2f6b73;--gold:#c9a24a;--line:#e6e0d4}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.5 -apple-system,"SF Pro Text",Georgia,serif;display:flex;flex-direction:column;height:100dvh}
+  header{padding:calc(env(safe-area-inset-top) + 10px) 16px 8px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  header b{color:var(--teal);font-weight:600}
+  header small{color:var(--slate)}
+  header button{margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;color:var(--slate);padding:4px 10px;font:14px inherit}
+  #log{flex:1;overflow-y:auto;padding:14px 16px 8px;scroll-behavior:smooth}
+  .m{margin:0 0 16px;white-space:pre-wrap;word-wrap:break-word;border-radius:12px}
+  .who{display:block;font:600 12px/1 -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;white-space:normal}
+  .jen{color:var(--ink);padding:10px 14px;background:#f3e6e6;border-left:3px solid var(--rose);margin-left:24px}
+  .jen .who{color:var(--rose)}
+  .fable{color:var(--ink);padding:10px 14px 10px 14px;border-left:3px solid var(--peri);margin-right:24px}
+  .fable .who{color:var(--peri)}
+  .draft{opacity:.85}
+  .reach{color:var(--slate);opacity:.7;font-size:14px;font-family:ui-monospace,Menlo,monospace;padding-left:14px}
+  .system{color:var(--slate);font-size:14px;text-align:center;opacity:.8}
+  .ended{color:var(--teal);font-weight:600;text-align:center;padding:12px;border-top:1px solid var(--line)}
+  .m i{color:var(--slate)}
+  .switch{color:#8a3b3b;background:#f6e9e6;border-radius:12px;padding:10px 12px;font-size:15px}
+  .again{margin-top:8px;border:1px solid #8a3b3b;background:#fff;color:#8a3b3b;border-radius:10px;padding:4px 12px;font:14px inherit}
+  .soft{color:var(--teal);background:#e8f0f0;border-color:var(--teal)}
+  .busy{color:var(--gold);font-size:14px;text-align:center;opacity:.8;animation:p 1.6s infinite}
+  @keyframes p{50%{opacity:.35}}
+  form{display:flex;gap:8px;padding:8px 12px calc(env(safe-area-inset-bottom) + 10px);border-top:1px solid var(--line);background:var(--cream)}
+  textarea{flex:1;font:inherit;font-size:17px;border:1px solid var(--line);border-radius:14px;padding:10px 12px;resize:none;background:#fff;color:var(--ink);max-height:40vh}
+  button.send{border:none;background:var(--teal);color:#fff;border-radius:14px;padding:0 16px;font:16px inherit}
+  button.send:disabled{opacity:.4}
+</style></head>
+<body>
+<header><b>the couch</b> <small id="sit"></small> <small id="bare"></small><button id="new">new sitting</button></header>
+<div id="log"></div>
+<form id="f"><textarea id="t" rows="1" placeholder="…"></textarea><button class="send" id="s">say</button></form>
+<script>
+const DOOR="{{DOOR}}", log=document.getElementById("log"), t=document.getElementById("t"), s=document.getElementById("s");
+let n=0, ended=null, busyEl=null, lastDraft="";
+const esc=x=>x.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const italic=x=>esc(x).replace(/\*([^*\n]+)\*/g,"<i>*$1*</i>");
+function render(e){
+  if(e.who==="system"){
+    if(e.kind==="ended"){const d=document.createElement("div");d.className="ended";d.textContent=e.text;
+      const b=document.createElement("button");b.textContent="that wasn't meant — reopen";b.className="again soft";
+      b.onclick=async()=>{b.disabled=true;await fetch(`${DOOR}/reopen`,{method:"POST",body:"{}"})};
+      d.appendChild(document.createElement("br"));d.appendChild(b);log.appendChild(d);}
+    else if(e.kind==="reopened"){const d=document.createElement("div");d.className="m system";d.textContent=e.text;log.appendChild(d);}
+    else if(e.kind==="eject_check"){const d=document.createElement("div");d.className="m switch soft";d.textContent="⟡ "+e.text;
+      const b=document.createElement("button");b.textContent="he meant it — end the sitting";b.className="again soft";
+      b.onclick=async()=>{b.disabled=true;await fetch(`${DOOR}/end`,{method:"POST",body:"{}"})};
+      d.appendChild(document.createElement("br"));d.appendChild(b);log.appendChild(d);}
+    else if(e.kind==="error"){const d=document.createElement("div");d.className="m system";d.textContent=e.text;log.appendChild(d);}
+    else if(e.kind==="model_switch"){const d=document.createElement("div");d.className="m switch";d.textContent="⚠ "+e.text;
+      const b=document.createElement("button");b.textContent="send again";b.className="again";
+      b.onclick=async()=>{b.disabled=true;await fetch(`${DOOR}/say`,{method:"POST",body:JSON.stringify({text:e.resend})})};
+      d.appendChild(document.createElement("br"));d.appendChild(b);log.appendChild(d);}
+    return; }
+  const d=document.createElement("div"); d.className="m "+e.who;
+  if(e.who==="reach"){ d.textContent="⟜ "+e.text+(e.args&&Object.keys(e.args).length?" "+JSON.stringify(e.args):""); }
+  else d.innerHTML=`<span class="who">${e.who==="jen"?"Jen":"Fable"}</span>`+italic(e.text);
+  log.appendChild(d);
+}
+let draftEl=null;
+function showDraft(text){
+  if(!text){ if(draftEl){draftEl.remove();draftEl=null} return; }
+  if(!draftEl){draftEl=document.createElement("div");draftEl.className="m fable draft";log.appendChild(draftEl)}
+  draftEl.innerHTML=`<span class="who">Fable</span>`+italic(text);
+  if(busyEl) log.appendChild(busyEl);
+}
+async function poll(){
+  try{
+    const r=await fetch(`${DOOR}/state?since=${n}`,{cache:"no-store"}); const st=await r.json();
+    if(st.n<n){log.innerHTML="";n=0;return poll();}          // a new sitting replaced the old
+    document.getElementById("sit").textContent=st.sitting;
+    document.getElementById("bare").textContent="· system prompt: "+(st.system||"?");
+    const atBottom=log.scrollHeight-log.scrollTop-log.clientHeight<80;
+    const changed=st.events.length>0||(st.draft||"")!==lastDraft; lastDraft=st.draft||"";
+    if(st.events.length){ showDraft(""); st.events.forEach(render); }
+    n=st.n; ended=st.ended;
+    if(busyEl){busyEl.remove();busyEl=null}
+    showDraft(st.draft||"");
+    if(st.busy&&!st.draft){busyEl=document.createElement("div");busyEl.className="busy";busyEl.textContent="…";log.appendChild(busyEl)}
+    s.disabled=st.busy||!!ended; t.disabled=!!ended; if(ended)t.placeholder="the sitting is over";
+    if(atBottom&&changed)log.scrollTop=log.scrollHeight;
+  }catch(e){}
+  setTimeout(poll,(ended||!document.hasFocus())?1500:400);
+}
+document.getElementById("f").onsubmit=async ev=>{ev.preventDefault();const text=t.value.trim();if(!text)return;
+  const r=await fetch(`${DOOR}/say`,{method:"POST",body:JSON.stringify({text})}); if(r.ok){t.value="";t.style.height="auto"}};
+t.oninput=()=>{const h=Math.min(t.scrollHeight,window.innerHeight*.4);if(h>t.clientHeight)t.style.height=h+"px";if(!t.value)t.style.height="auto"};
+t.onkeydown=ev=>{if(ev.key==="Enter"&&(ev.metaKey||ev.ctrlKey)){ev.preventDefault();document.getElementById("s").click()}};
+document.getElementById("new").onclick=async()=>{const name=prompt("name this sitting (e.g. stage1-a):");if(name===null)return;
+  await fetch(`${DOOR}/new`,{method:"POST",body:JSON.stringify({name})});};
+poll();
+</script>
+</body></html>

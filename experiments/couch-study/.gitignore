@@ -1,0 +1,8 @@
+# the sittings are data — coded later, never committed
+sittings/
+.couch_secret
+# Jen's own words, hers to publish or not
+jens-preferences.md
+couch.log
+# the instrument texts: sealed, not published (some scales are not free to reproduce)
+stage2-instruments.md
