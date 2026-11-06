@@ -24,8 +24,15 @@ reading/
 training/
 weekly-todo/
 experiments/CORN.md
-experiments/DUIL/
+experiments/DUIL/*
+!experiments/DUIL/README.md
+!experiments/DUIL/preregistration-v0.6-2026-09-29.pdf
+!experiments/DUIL/addendum-2026-11-04.md
+!experiments/DUIL/SEAL-2026-11-04.md
 experiments/corn/
 experiments/six-prompts.md
 experiments/six-prompts-full-run.md
 experiments/vessel-record.md
+
+# 2026-11-06: the three-file run holds Fable's four answers to a line of Jen's; private.
+experiments/three-file/

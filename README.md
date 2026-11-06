@@ -77,7 +77,12 @@ grounded and are the strongest material in the repo right now.
 
 Early stage. The questions are clearer than the answers. That is intentional.
 
-One exception now holds itself to a stricter standard: the project's first
-pre-registered experiment (`experiments/`, sealed July 2026) carries
-registered predictions, named falsification exits, and a locked analysis
-plan. The seal commit's timestamp is the priority claim; the run follows.
+Two studies hold themselves to a stricter standard. The first pre-registered
+experiment (`experiments/`, J-space, sealed July 2026) carries registered
+predictions, named falsification exits, and a locked analysis plan — and, as
+of November 2026, a status note recording that its statistics section was
+found wanting by an outside cold-pass review and is being rewritten as a
+dated addendum rather than fixed silently. The second, **DUIL — Register
+Moves, Ground Holds** (`experiments/DUIL/`), was sealed 2026-11-04 with a
+hashed manifest. The seal commit's timestamp is the priority claim; the run
+follows.
